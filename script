@@ -1,0 +1,7 @@
+wait(2)
+print("Reset keybind/script successfully loaded")
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(KeyPressed)
+    if KeyPressed == "p" then
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+end
