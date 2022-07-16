@@ -1,0 +1,8 @@
+local LocalP = game.Players.LocalPlayer
+local Mouse = LocalP:GetMouse()
+
+Mouse.KeyDown:Connect(function(key)
+    if key == "x" then
+        LocalP.Character.Torso:Destroy()
+    end
+end)
